@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Rubik:500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    background: #ffffff;
+    font-size: 1.6rem;
+}
+
+header,
+main,
+footer{
+    max-width: 100%;
+}
+
+#header{
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+
+.header-container,
+#home,
+#specs,
+#reviews,
+#pricing,
+#subscribe,
+.footer-container{
+    margin: 4rem 0;
+    max-width: 100%;
+    padding: 1.5rem;
+}
+
+article{
+    width: 58%;
+    padding-right: 1rem;
+}
+aside{
+    width: 40%;
+    padding-left: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 6rem;
+    line-height: 7rem;
+    margin-bottom: 3rem;
+}
+
+h2{
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 3rem;
+}
+
+h4{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+p{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}
+
+button,
+input[type=submit]{
+    border-radius: 0.32rem;
+    border: 0;
+    box-shadow: rgba(255,230,0,.4) 0 10px 10px;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    background: #ffe600;
+    color: black;
+    font-family: 'Muli', sans-serif;
+    cursor: pointer;
+}
+
+.header-container,
+.footer-container{
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    align-self: center;
+}
+#nav-bar{
+    align-self: flex-end;
+}
+
+#nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#nav-bar li{
+    align-self: center;
+    padding-left: 4rem;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    color: #888;
+}
+
+#nav-bar a:hover{
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    color: #ffe600;
+}
+
+#header-img{
+    width: 6.25rem;
+    display: block;
+}
+
+#specs, #promo-video, #subscribe{
+    background: #eeeeee;
+}
+
+.section-container{
+    width: 120rem;
+    margin: 4rem auto;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#specs article, #subscribe article{
+    width: 100%;
+}
+
+#specs h2,
+#specs h4,
+#specs p,
+#subscribe h2,
+#subscribe h4,
+#subscribe p{
+    text-align: center;
+}
+
+#cards-container{
+    display: grid;
+    grid-column-gap: 1.5rem;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.card{
+    padding: 1.5rem;
+    text-align: left;
+    background: #ffffff;
+    box-shadow: rgba(0,0,0,.2) 0 10px 10px;
+}
+
+.card img{
+    width: 15%;
+    padding-bottom: 2rem;
+}
+
+#promo-video{
+    padding: 0 7rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#promo-video article,
+#promo-video aside{
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+}
+
+video:focus{
+    outline: none;
+    border: none;   
+}
+
+#pricing .product{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#form{
+    display: flex;
+    flex-direction: row;
+}
+
+#form input[type=email]{
+    padding: 1rem;
+    width: 90%;
+    font-size: 2rem;
+}
+
+footer p{
+    font-size: 1.5rem;
+    text-align: center;
+}
